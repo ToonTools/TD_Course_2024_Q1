@@ -1,4 +1,6 @@
 function HelloWorld()
 {
-	MessageLog.trace("Hello World from System Variable")
+	var HelloWorld = "Hello World"
+	MessageLog.trace(HelloWorld)
 }
+
