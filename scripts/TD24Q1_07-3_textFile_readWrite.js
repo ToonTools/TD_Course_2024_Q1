@@ -6,9 +6,9 @@ How to use: launch each of the functions to write and then read information from
 
 */
 
-var myUserName 		= about.userName
-var myPath 			= "C:\\Users\\" + myUserName + "\\Desktop\\test\\"
-var fileName 		= "MyTextFile.txt"
+var myUserName 			= about.userName
+var myPath 					= "C:\\Users\\" + myUserName + "\\Desktop\\test\\"
+var fileName 				= "MyTextFile.txt"
 var myFileNameFull 	= myPath + fileName 
 	
 function textFile_write(){
@@ -21,12 +21,10 @@ function textFile_write(){
 		myTextFile.close()
 	}
 
-	var myMessage 			= "this is my message"
-	
-	var fileWrite_dialog 	= new Dialog()
+	var myMessage 					= "this is my message"
+	var fileWrite_dialog 		= new Dialog()
 	fileWrite_dialog.title 	= "Please write your text input here:"
-	
-	var userInput 			= new LineEdit()
+	var userInput 					= new LineEdit()
 	fileWrite_dialog.add(userInput)
 	
 	if ( fileWrite_dialog.exec() )
@@ -37,14 +35,29 @@ function textFile_write(){
 	myTextFile.open(FileAccess.Append)
 	myTextFile.writeLine(myMessage)
 	myTextFile.close()
+	MessageLog.trace("'" + myMessage +"' was written to the file '"+ myFileNameFull)
 }
 
 
 function textFile_read(){
 
 	myTextFile 	= new File(myFileNameFull)
+	if(!myTextFile.exists){
+		MessageBox.info("File does not exist :" + myTextFile )
+		return
+	}
+	
 	myTextFile.open(FileAccess.ReadOnly)
 	var content = myTextFile.read()
 	MessageLog.trace("Concent of : " + myFileNameFull + " =\n"+content+"\n")
+
+	var read_dialog = new Dialog()
+	read_dialog.title = myFileNameFull
+
+	read_dialog_content = new Label
+	read_dialog_content.text = content
+
+	read_dialog.add(read_dialog_content)
+	read_dialog.exec()
 	
 }
