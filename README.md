@@ -15,7 +15,7 @@
 ## Session Summary
 | Session | Date | Content |
 | :----:|:----:|:---|                                       
-| 7 | 23/1/2024 &#9744; | |                           
+| 7 | 23/1/2024 &#9744; |Scripting Introduction <br> [Harmony Scripting](https://docs.toonboom.com/help/harmony-22/scripting/script/index.html) , [Control Centre Scripting](https://docs.toonboom.com/help/harmony-22/scripting/dbscript/index.html)<br> Hello World <br> get Scene Information <br> read/write Text File <br>  [Script Debugging](https://docs.toonboom.com/help/harmony-20/premium/scripting/troubleshoot-script-error.html?Highlight=debugger), [Extended Scripting API](https://docs.toonboom.com/help/harmony-22/scripting/extended/index.html), [Custom Script Directory](https://docs.toonboom.com/help/harmony-20/premium/scripting/store-script-custom-folder.html?Highlight=TOONBOOM_GLOBAL_SCRIPT_LOCATION)|                           
 | 8 | 23/1/2024 &#9744; | |                           
 | 9 | 23/1/2024 &#9744; | |
 | 10 | 23/1/2024 &#9744;| |
