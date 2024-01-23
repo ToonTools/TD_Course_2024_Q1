@@ -3,16 +3,15 @@
 */
 function getSceneInformation()
 {
-	MessageLog.trace("started")
+	MessageLog.trace("started ")
 
-	var numberOfNodesSelected = selection.numberOfNodesSelected()
+	var selectedNodes_initial = selection.numberOfNodesSelected()
 
 	selection.selectAll()
 
 	var numberOfNodesInScele = selection.numberOfNodesSelected()
 
-	MessageLog.trace("The total number of nodes selected is : " + numberOfNodesSelected )
-	MessageLog.trace("The total number of nodes in the scene  is : " + numberOfNodesInScele )
+	MessageLog.trace("Number of nodes selected : " + selectedNodes_initial )
+	MessageLog.trace("Number of nodes in scene : " + numberOfNodesInScele )
 
 	selection.clearSelection()
-}
