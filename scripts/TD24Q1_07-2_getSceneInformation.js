@@ -15,3 +15,4 @@ function getSceneInformation()
 	MessageLog.trace("Number of nodes in scene : " + numberOfNodesInScele )
 
 	selection.clearSelection()
+}
