@@ -13,26 +13,23 @@ var myFileNameFull 	= myPath + fileName
 	
 function writeTextFile(){
 
-	var myFile 			= new File(myFileNameFull)		
+	var myTextFile 	= new File(myFileNameFull)		
 
-	myFile.open(FileAccess.ReadWrite)
-	
-	/// check if the file exists
-	/// do you want to add content to it?
-	/// user interaction yes / no
-	/// add message to file
-	/// append line to file
+	if(!myTextFile.exists){
+		MessageLog.trace(myFileNameFull + "does not exist, so I will make it now")
+		myTextFile.open(FileAccess.ReadWrite)
+		myTextFile.close()
+	}
 
-	
 	var myMessage 		= "this is my message"
 	
+	var fileWrite_dialog = new Dialog()
+	fileWrite_dialog.title = "Please write your text input here:"
 	
 	
-	myFile.writeLine(myMessage)
-	
-	MessageLog.trace("my file should have a line written now")
-
-	myFile.close()
+	myTextFile.open(FileAccess.Append)
+	myTextFile.writeLine(myMessage)
+	myTextFile.close()
 }
 
 
