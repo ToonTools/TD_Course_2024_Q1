@@ -26,6 +26,9 @@ function writeTextFile(){
 	var fileWrite_dialog = new Dialog()
 	fileWrite_dialog.title = "Please write your text input here:"
 	
+	if ( fileWrite_dialog.exec() )
+	{
+	}
 	
 	myTextFile.open(FileAccess.Append)
 	myTextFile.writeLine(myMessage)
