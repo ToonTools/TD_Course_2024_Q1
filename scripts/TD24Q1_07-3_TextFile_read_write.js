@@ -6,29 +6,41 @@ How to use: launch each of the functions to write and then read information from
 
 */
 
-
+var myUserName 		= about.userName
+var myPath 			= "C:\\Users\\" + myUserName + "\\Desktop\\test\\"
+var fileName 		= "MyTextFile.txt"
+var myFileNameFull 	= myPath + fileName 
+	
 function writeTextFile(){
-	MessageLog.trace("this is where text will be written")
-
-	
-	// create text file
-	var myUserName 		= about.userName
-	var myPath 			= "C:\\Users\\" + myUserName + "\\Desktop\\test\\"
-	var fileName 		= "MyTextFile.txt"
-	var myFileNameFull 	= myPath + fileName 
-	
-	MessageLog.trace(myFileNameFull)
 
 	var myFile 			= new File(myFileNameFull)		
 
 	myFile.open(FileAccess.ReadWrite)
+	
+	/// check if the file exists
+	/// do you want to add content to it?
+	/// user interaction yes / no
+	/// add message to file
+	/// append line to file
 
-	MessageLog.trace("my file should be made now")
+	
+	var myMessage 		= "this is my message"
+	
+	
+	
+	myFile.writeLine(myMessage)
+	
+	MessageLog.trace("my file should have a line written now")
 
 	myFile.close()
 }
 
 
 function readTextFile(){
-	MessageLog.trace("this is where text will be read from")
+
+	myTextFile 	= new File(myFileNameFull)
+	myTextFile.open(FileAccess.ReadOnly)
+	var content = myTextFile.read()
+	MessageLog.trace("Concent of : " + myFileNameFull + " =\n"+content+"\n")
+	
 }
