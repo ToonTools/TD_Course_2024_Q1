@@ -4,3 +4,5 @@ function HelloWorld()
 	MessageLog.trace(HelloWorld)
 }
 
+Hello
+World
