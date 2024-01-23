@@ -11,7 +11,7 @@ var myPath 			= "C:\\Users\\" + myUserName + "\\Desktop\\test\\"
 var fileName 		= "MyTextFile.txt"
 var myFileNameFull 	= myPath + fileName 
 	
-function writeTextFile(){
+function textFile_write(){
 
 	var myTextFile 	= new File(myFileNameFull)		
 
@@ -21,13 +21,17 @@ function writeTextFile(){
 		myTextFile.close()
 	}
 
-	var myMessage 		= "this is my message"
+	var myMessage 			= "this is my message"
 	
-	var fileWrite_dialog = new Dialog()
-	fileWrite_dialog.title = "Please write your text input here:"
+	var fileWrite_dialog 	= new Dialog()
+	fileWrite_dialog.title 	= "Please write your text input here:"
+	
+	var userInput 			= new LineEdit()
+	fileWrite_dialog.add(userInput)
 	
 	if ( fileWrite_dialog.exec() )
 	{
+		myMessage = userInput.text
 	}
 	
 	myTextFile.open(FileAccess.Append)
@@ -36,7 +40,7 @@ function writeTextFile(){
 }
 
 
-function readTextFile(){
+function textFile_read(){
 
 	myTextFile 	= new File(myFileNameFull)
 	myTextFile.open(FileAccess.ReadOnly)
