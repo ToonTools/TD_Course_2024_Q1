@@ -49,7 +49,7 @@ function textFile_read(){
 	
 	myTextFile.open(FileAccess.ReadOnly)
 	var content = myTextFile.read()
-	MessageLog.trace("Concent of : " + myFileNameFull + " =\n"+content+"\n")
+	MessageLog.trace("Content of : " + myFileNameFull + " =\n"+content+"\n")
 
 	var read_dialog = new Dialog()
 	read_dialog.title = myFileNameFull
