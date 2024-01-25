@@ -1,4 +1,6 @@
 
+Add the following informaitoninto a `master controller` node and make sure the `myCustomMasterControllerScript.js` is in a location that the harmony scene can read
+
 ## Specifications
 ```html
 <specs>
