@@ -17,7 +17,7 @@ function addShortcut(){
 	
 	MessageLog.trace(message_start)
 	
-	MessageLog.trace( JSON.stringify(ScriptManager,null,2) )
+	//MessageLog.trace( JSON.stringify(ScriptManager,null,2) )
     
     ScriptManager.addShortcut( { 	text : "use HelloWorld",
                     id       		: "useHelloWorld",
