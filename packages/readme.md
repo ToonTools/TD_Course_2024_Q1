@@ -6,6 +6,8 @@ put the packages in: `
 C:\Program Files (x86)\Toon Boom Animation\Toon Boom Harmony 22 Premium\Plugins\ScriptingInterfaces\resources\packages
 `
 
+![packages location](../images/packages%20location.png)
+
 # Custom Menu
 
 Modify line 657 of the `menu.xml` in
