@@ -16,6 +16,6 @@
 | Session | Date | Scripts | Links |
 | :----:|:----:|:---|  :---|                                    
 | 7 | 23/1/2024 &#9745; |[TD24Q1_07-1_helloWorld.js](scripts/TD24Q1_07-1_helloWorld.js) <br> [TD24Q1_07-2_getSceneInformation.js](scripts/TD24Q1_07-2_getSceneInformation.js) <br> [TD24Q1_07-3_textFile_readWrite.js](scripts/TD24Q1_07-3_textFile_readWrite.js)|TB Scripting : [Harmony Classes](https://docs.toonboom.com/help/harmony-22/scripting/script/classes.html) , [Debugging](https://docs.toonboom.com/help/harmony-20/premium/scripting/troubleshoot-script-error.html?Highlight=debugger), [Control Centre](https://docs.toonboom.com/help/harmony-22/scripting/dbscript/index.html), [Storyboard Pro](https://docs.toonboom.com/help/storyboard-pro-22/storyboard/scripting/reference/index.html), [Extended Scripting API](https://docs.toonboom.com/help/harmony-22/scripting/extended/index.html), [Custom Script Directory](https://docs.toonboom.com/help/harmony-20/premium/scripting/store-script-custom-folder.html?Highlight=TOONBOOM_GLOBAL_SCRIPT_LOCATION) <br> Non-TB Software: [Notepad++](https://notepad-plus-plus.org/downloads/), [Visual Studio Code](https://code.visualstudio.com/Download), [Qt Designer](https://build-system.fman.io/qt-designer-download)<br> Other Resources : [Google Materials Icons](https://fonts.google.com/icons), [w3 schools](https://www.w3schools.com/), [Stack Overflow](https://stackoverflow.com/)         
-| 8 | 23/1/2024 &#9744; | |                           
-| 9 | 23/1/2024 &#9744; | |
+| 8 | 23/1/2024 &#9744; | Master Controllers |                           
+| 9 | 23/1/2024 &#9744; | Expressions |
 | 10 | 23/1/2024 &#9744;| |
