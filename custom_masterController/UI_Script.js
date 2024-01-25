@@ -1,1 +1,0 @@
-include(scene.currentProjectPath() + "/scripts/myCustomMasterControllerScript.js");
