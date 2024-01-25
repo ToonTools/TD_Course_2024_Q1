@@ -2,16 +2,19 @@
 
 ShadowSize
 ```
-min = 0.1
-max = 1
+max 	      = 1
+min 	      = 0.1
+reductionFactor   = 3
+shadowSize 	      = 1/(value("Square_PosY")/reductionFactor)
 
-shadowSize = 1/value("Square_PosY")
+if (shadowSize >max){
+shadowSize = max
+}
 
-if( shadowSize < min){
+if(shadowSize < min){
 shadowSize = min
 }
 
-if( shadowSize >max){
-shadowSize = max
-}
+
+
 ``````
