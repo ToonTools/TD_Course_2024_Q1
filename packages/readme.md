@@ -15,5 +15,4 @@ Modify line 657 of the `menu.xml` in
 ```html
   <menu id="TD24Q1_Custom" text="TD24Q1_Custom" >
   </menu>
-  
 ```
