@@ -4,8 +4,9 @@ function watermarkRenderedImages(){
 
   MessageLog.trace("starting : watermarkRenderedImages")
 
-  var command     = "Python.exe"
-  var arguments   = [myPythonScript,"test1" , "test2"]
+  var command       = "Python.exe"
+  var watermarkText = "my watermark message..."
+  var arguments     = [myPythonScript,watermarkText]
   
   var QPro  = new QProcess();
   QPro.start(command, arguments)

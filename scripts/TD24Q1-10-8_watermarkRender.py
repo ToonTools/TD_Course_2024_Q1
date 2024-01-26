@@ -1,7 +1,7 @@
 #TD101_watermarkRender.py
 import sys
 myArguments = sys.argv
-#print(myArguments)
+
 import os
 from PIL import Image, ImageDraw, ImageFont
 
@@ -56,20 +56,14 @@ def add_watermark(img_path, copy_text, output):
   
   # if the process was a success, it returns true, otherwise the return value will be False
   return True 
-
-def generateWatermarkedImage_test(sourceImage):
-  watermarkedImage  = os.path.splitext(sourceImage)[0] + "_watermarked.jpg"
-  copyText          = "Sole and exclusive Property of ......." 
-
-  watermarkResult = add_watermark(sourceImage,copyText,watermarkedImage)
-  if(watermarkResult):
-    print("Generated: {}".format(watermarkedImage))
     
-def generateWatermarkedImage_fromHarmony():
-  sourceImage       = myArguments[0]
-  watermarkedImage  = myArguments[1]
-  copyText          = myArguments[2]
+def generateWatermarkedImage_fromHarmony(sourceImage, copyText ):
+  
+  watermarkedImage  = os.path.splitext(sourceImage)[0] + "_watermarked.jpg"
+  
+
   if(add_watermark(sourceImage,copyText,watermarkedImage)):
     print("Generated: {}".format(watermarkedImage))
     
-generateWatermarkedImage_test("C:\Github\ToonTools\TD_Course_2024_Q1\watermark\source_image.jpg")
+
+generateWatermarkedImage_fromHarmony("C:\Github\ToonTools\TD_Course_2024_Q1\watermark\source_image.jpg",myArguments[1] )
