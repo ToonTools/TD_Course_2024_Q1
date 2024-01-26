@@ -1,6 +1,6 @@
 ## Getting Python working
-
-run it inside Command Prompt (Outside of Harmony)
+ 
+run this inside of `python script window` in Harmony
 
 ``` python
 import os
