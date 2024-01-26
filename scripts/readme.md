@@ -1,4 +1,7 @@
 ## Getting Python working
+
+run it inside `Python Script Console` in Harmony
+
 ``` python
 import os
 #Extend the DLL dependency load-path, so that dependant DLLs can load. QtCore.pyd
