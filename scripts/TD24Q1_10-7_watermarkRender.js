@@ -5,7 +5,7 @@ function watermarkRenderedImages(){
   MessageLog.trace("starting : watermarkRenderedImages")
 
   var command       = "Python.exe"
-  var watermarkText = "my watermark message..."
+  var watermarkText = scene.currentVersionName()
   var arguments     = [myPythonScript,watermarkText]
   
   var QPro  = new QProcess();
